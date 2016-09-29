@@ -9,7 +9,11 @@
                 password: $scope.password
             }
             
-            
+            $http.post('http://server.timothyradder:443/api/login', data).success(function (data, status) {
+               
+           }).error(function (error) {
+               
+           });
         };
         
     });
